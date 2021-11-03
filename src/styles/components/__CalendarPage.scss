@@ -1,0 +1,23 @@
+.calendar-page{
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.rbc-calendar{
+  height: 100%;
+}
+
+.rbc-toolbar button:hover, .rbc-toolbar button:focus{
+  background-color: $red;
+  color: #fff;
+}
+
+.rbc-toolbar button:active, .rbc-toolbar button.rbc-active{
+  background-color: $red;
+  color: #fff;
+}
+.rbc-toolbar button:active:hover, .rbc-toolbar button:active:focus, .rbc-toolbar button.rbc-active:hover, .rbc-toolbar button.rbc-active:focus{
+  background-color: $red;
+  color: #fff;
+}

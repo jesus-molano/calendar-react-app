@@ -1,0 +1,30 @@
+.btn-float{
+  background-color: $red;
+  color: #fff;
+  border: 3px solid $red;
+  border-radius: 100%;
+  position:absolute;
+  bottom: 2rem;
+  right: 2rem;
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover{
+    background-color: #fff;
+    color: $red;
+  }
+  &:focus{
+    border-color: darken($color: $red, $amount: 20);
+  }
+}
+
+.btn-floatAdd{
+  background-color: #fff;
+  color: $red;
+  &:hover{
+    background-color: $red;
+    color: #fff;
+  }
+}

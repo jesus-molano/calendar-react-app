@@ -1,0 +1,75 @@
+/* Modal */
+.ReactModalPortal > div {
+	opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	transition: opacity 0.2s ease-in-out;
+	z-index: 999;
+}
+
+.modal-bg {
+	background-color: rgba(0, 0, 0, 0.3);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+	opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+	opacity: 0;
+}
+
+.modal {
+	background: white;
+	border-radius: 0.6rem;
+	color: rgb(51, 51, 51);
+	display: inline;
+	max-height: 620px;
+	max-width: 25rem;
+	width: 100%;
+	outline: none;
+	padding: 2rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem auto;
+}
+
+.form-control {
+	border-radius: 0.6rem;
+	border: 3px solid #333;
+	outline: none;
+	padding: 0.5rem 1rem;
+	transition: transform 0.3s ease;
+
+
+	&:hover,
+	&:focus {
+		border-color: darken($color: $red, $amount: 10);
+
+	}
+}
+
+.container {
+	margin-block: 1rem;
+}
+
+
+// Date Picker
+.react-datetime-picker input:focus{
+	outline: none;
+}
+.react-datetime-picker__wrapper{
+	border: 0px solid transparent;
+}
