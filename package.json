@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build && nodejs /api/index.js",
+    "build": "vite build",
+    "api": "node ./api/index.js",
     "serve": "vite preview"
   },
   "dependencies": {
